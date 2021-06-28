@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\copit\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\copit\\.nuget\\packages"
+    ]
+  }
+}

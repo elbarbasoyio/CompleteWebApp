@@ -1,4 +1,4 @@
-# Curso realizado desde Pluralsight
+# Pluralsight Course
 
 * ASP.NET Core and MVC
 

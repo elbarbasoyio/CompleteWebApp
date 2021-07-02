@@ -1,16 +1,11 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>Dutch Treat</title>
-    <link href="css/site.css" rel="stylesheet" />
+﻿
+@{
+    ViewBag.Title = "Home Page!";
 
-</head>
-<body>
-    <h2>Dutch Treat</h2>
+}
 
     <div class="product-info">
-        <img src="/img/VanGogh.jpg" />
+        <img src="~/img/VanGogh.jpg" />
         <h3>Mug</h3>
         <ul class="product-props">
             <li>Price: $9.99</li>
@@ -20,6 +15,7 @@
         </ul>
         <button id="buyButton">Buy</button>
     </div>
+
     <div id="theForm">
         <form>
             <label>Your Name:</label>
@@ -40,7 +36,7 @@
             <br />
             <input type="submit" value="Send Message" />
         </form>
-    </div> 
+    </div>
 
     <div>
         <div id="loginToggle">Login</div>
@@ -51,19 +47,16 @@
             </div>
             <div>
                 <label>Password</label>
-                <input type="password"/>
+                <input type="password" />
             </div>
             <div>
                 <input type="checkbox" />
                 <label>Remember me?</label>
             </div>
             <div>
-                <input type="submit" value="Login"/>
+                <input type="submit" value="Login" />
             </div>
         </form>
     </div>
 
-    <script src="lib/jquery/dist/jquery.js"></script>
-    <script src="js/Index.js"></script>
-</body>
-</html>
+

@@ -22,7 +22,7 @@ namespace DutchTreat.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Productos",
+                name: "Products",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -41,7 +41,7 @@ namespace DutchTreat.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Productos", x => x.Id);
+                    table.PrimaryKey("PK_Products", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -65,9 +65,9 @@ namespace DutchTreat.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_OrderItem_Productos_ProductId",
+                        name: "FK_OrderItem_Products_ProductId",
                         column: x => x.ProductId,
-                        principalTable: "Productos",
+                        principalTable: "Products",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -92,7 +92,7 @@ namespace DutchTreat.Migrations
                 name: "Orders");
 
             migrationBuilder.DropTable(
-                name: "Productos");
+                name: "Products");
         }
     }
 }

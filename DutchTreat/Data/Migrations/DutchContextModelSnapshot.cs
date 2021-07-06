@@ -107,7 +107,7 @@ namespace DutchTreat.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Productos");
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("DutchTreat.Data.Entities.OrderItem", b =>

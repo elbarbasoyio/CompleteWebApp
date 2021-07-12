@@ -36,6 +36,7 @@ namespace DutchTreat
                 .AddJsonFile("config.json")
                 .AddEnvironmentVariables();
 
+
         }
     }
 }

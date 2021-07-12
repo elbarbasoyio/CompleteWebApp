@@ -1,5 +1,5 @@
 {
   "ConnectionStrings": {
-    "DutchContextDb": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=DutchTreatDb;Integrated Security=True;Connect Timeout=30; MultipleActiveResultSets=True"
+    "DutchContextDb": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=DutchTreatDb;Integrated Security=True;Connect Timeout=30; MultipleActiveResultSets=True;"
   }
 }

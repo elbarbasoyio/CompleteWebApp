@@ -29,12 +29,21 @@ namespace DutchTreat.Data
                     .ToList();
         }
 
-        public IEnumerable<Order> GetAllOrders()
+        //including to URL: ?includeItems=false
+        public IEnumerable<Order> GetAllOrders(bool includeItems)
         {
-            return ctx.Orders
-                .Include(o => o.Items)
-                .ThenInclude(o => o.Product)
-                .ToList();
+            if(includeItems)
+            {
+                return ctx.Orders
+                    .Include(o => o.Items)
+                    .ThenInclude(o => o.Product)
+                    .ToList();
+            }
+            else
+            {
+                return ctx.Orders
+                    .ToList();
+            }
         }
 
         public bool SaveAll() 
